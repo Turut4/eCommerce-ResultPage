@@ -6,11 +6,11 @@
 }
 /* ICONS */
 #nav--user-options-icons {
-  height: 18px;
+  height: 25px;
   align-items: center;
   margin: 5px;
   color: #000;
-  margin-right: 35px;
+  margin-right: 40px;
   image-rendering: optimizeQuality;
 }
 
@@ -162,6 +162,54 @@
   margin-left: 8px;
   cursor: pointer;
 }
+
+/* Bundle */
+.benefits-bundle {
+  background-color: #faf3ea;
+  height: 270px;
+  align-content: center;
+}
+.benefits-bundle div {
+  align-items: center;
+  align-content: center;
+  text-align: left;
+  flex-wrap: wrap;
+  padding-right: 80px;
+  justify-content: space-between;
+}
+
+.bundle--high-quality {
+  margin-left: 50px;
+  display: flex;
+}
+.bundle--high-quality div {
+  width: clamp(300px, 10vw, 350px);
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.bundle-images {
+  margin-right: 15px;
+  width: clamp(40px, 12vw, 60px);
+  height: clamp(40px, 12vw, 60px);
+  float: inline-start;
+}
+
+.bundle--titles {
+  font-size: clamp(16px, 2vw, 25px);
+  font-weight: bolder;
+  white-space: nowrap;
+  display: flex;
+}
+
+.bundle--description {
+  display: flex;
+  font-size: clamp(12px, 2vw, 20px);
+  color: #898989;
+  white-space: nowrap;
+}
+
 /* Footer */
 .footer {
   text-align: left;
@@ -215,13 +263,8 @@
   border: none;
   border-bottom: #000 solid 1px;
   cursor: pointer;
-}
-
-.button-subbmit:hover {
-  border: #000 solid 1px;
-  border-radius: 10px;
-  padding: 1px;
-  transition-duration: 0.5s;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 @media (max-width: 460px) {
@@ -229,6 +272,7 @@
     scrollbar-width: initial;
     padding: 0;
     margin: 0;
+    /* overflow-x: hidden; */
   }
   .header {
     flex-direction: column;
@@ -298,6 +342,28 @@
   .footer--title-links {
     padding-top: 10px;
     border-top: #9f9f9f solid 2px;
+  }
+  .benefits-bundle {
+    flex-direction: column;
+    text-align: left;
+    margin: 0;
+    height: 320px;
+  }
+  .benefits-bundle div {
+    margin: 0;
+    flex-direction: column;
+  }
+  .bundle--high-quality div {
+    width: 200px;
+    padding: 0;
+    padding-bottom: 20px;
+  }
+  .bundle--titles {
+    margin: 0;
+    white-space: wrap;
+  }
+  .bundle--description {
+    white-space: wrap;
   }
 }
 
