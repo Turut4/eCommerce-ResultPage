@@ -22,24 +22,29 @@
   </head>
   <body>
     <header>
-      <aside class="sidebar-button">☰</aside>
+      <div class="sidebar-button">☰</div>
       <div class="header">
         <div class="store-name--header">
           <img class="logo--header" src="/img/logo.png" alt="Mobili Logo" />
           <h1 class="name--header">Mobili</h1>
         </div>
-        <nav class="nav--pages">
-          <li class="nav--page-list"><a class="nav--page-list-link" href="#">Home</a class="nav--page-list-link"></li>
-          <li class="nav--page-list"><a class="nav--page-list-link" href="#">Shop</a></li>
-          <li class="nav--page-list"><a class="nav--page-list-link" href="#">About</a></li>
-          <li class="nav--page-list"><a class="nav--page-list-link" href="#">Contact</a></li>
-        </nav>
-        <nav class="nav--user-options">
-          <a href="#"><span class="material-symbols-outlined" id="nav--user-options-icons">person_alert</span></a>
-          <a href="#"><span class="material-symbols-outlined" id="nav--user-options-icons">search</span></a>
-          <a href="#"><span class="material-symbols-outlined" id="nav--user-options-icons">bookmark_heart</span></a>
-          <a href="#"><span class="material-symbols-outlined" id="nav--user-options-icons">shopping_cart</span></a>
-        </nav>
+        <div class="nav--pages">
+          <nav>
+            <li class="nav--page-list"><a class="nav--page-list-link" href="#">Home</a class="nav--page-list-link"></li>
+            <li class="nav--page-list"><a class="nav--page-list-link" href="#">Shop</a></li>
+            <li class="nav--page-list"><a class="nav--page-list-link" href="#">About</a></li>
+            <li class="nav--page-list"><a class="nav--page-list-link" href="#">Contact</a></li>
+          </nav>
+        </div>
+        <div class="nav--user-options">
+          <nav>
+            <a href="#"><img src="/img/icons/report.png" alt="" id="nav--user-options-icons"></a>
+            <a href="#"><img src="/img/icons/search.png" alt="" id="nav--user-options-icons"></a>
+            <a href="#"><img src="/img/icons/favorite.png" alt="" id="nav--user-options-icons"></a>
+            <a href="#"><img src="/img/icons/shoppingCart.png" alt="" id="nav--user-options-icons"></a>
+          </nav>
+
+        </div>
       </div>
     </header>
     <section class="shop-cover">
@@ -49,7 +54,7 @@
         </div>
         <div>
             <h2 class="shop-title--path"> <span class="shop-title--path-highlight"> Home </span>
-              <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="path-icon" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 12L5 7L0 2L1 0L8 7L1 14L0 12Z" fill="black"/>
               </svg>
               <span id="current-path">Shop</span></h2>
@@ -58,12 +63,42 @@
     </section>
     <section class="filter-section">
       <div class="filter-options">
-        <span class="material-symbols-outlined" id="filter-icon">tune</span>
+        <a id="filter-icon"><img src="/img/icons/filter.png" alt=""></a>
         <span class="filter-text">Filter</span>
         <!-- Implementar js -->
         <span class="filter-text--description">Showing 1-16 of 32 Results</span>
       </div>
+      <div>
+        <span id="showQtd-text">Show</span>
+        <span id="showQtd">16</span>
+      </div>
     </section>
-
+    <footer>
+      <div class="footer">
+        <div class="footer--grid-1">
+          <div class="footer--title">footer.</div>
+          <div class="footer--title-address">Rua Alexandre Dumas, 1711 - 6º andar - Chácara Santo Antônio, São Paulo - SP, 04717-004</div>    
+        </div>
+        <div class="footer--grid-2">
+          <div class="footer--title-links">Links</div>
+          <div>
+            <a class="footer--links" href="#">Home</a>
+            <a class="footer--links" href="#">Shop</a>
+            <a class="footer--links" href="#">About</a>
+            <a class="footer--links" href="#">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer--title-links">Help</div>
+          <a class="footer--links" href="#">Payment Options</a>     
+          <a class="footer--links" href="#">Returns</a>     
+          <a class="footer--links" href="#">Privacy Policies</a>
+        </div>
+        <div>
+          <div class="footer--title-links">Newsletter</div>
+          <div><input id="email-field" type="email" placeholder="Enter Your Email Address"><button type="submit" class="button-subbmit">Subscribe</button></div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
