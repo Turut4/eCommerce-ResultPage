@@ -30,5 +30,237 @@
     "old_price": "",
     "tag": "New",
     "image": "Respira.png"
+  },
+  {
+    "name": "Grinder",
+    "description": "Modern coffee table",
+    "price": "Rp 1.200.000",
+    "old_price": "Rp 1.500.000",
+    "discount": "20%",
+    "image": "Syltherine.png"
+  },
+  {
+    "name": "Elberta",
+    "description": "Elegant dining chair",
+    "price": "Rp 1.800.000",
+    "old_price": "",
+    "discount": "",
+    "image": "Leviosa.png"
+  },
+  {
+    "name": "Mervin",
+    "description": "Cozy lounge chair",
+    "price": "Rp 3.000.000",
+    "old_price": "Rp 4.000.000",
+    "discount": "25%",
+    "image": "Lolito.png"
+  },
+  {
+    "name": "Oscuro",
+    "description": "Black leather sofa",
+    "price": "Rp 10.000.000",
+    "old_price": "Rp 12.000.000",
+    "discount": "15%",
+    "image": "Respira.png"
+  },
+  {
+    "name": "Luna",
+    "description": "Outdoor lounge set",
+    "price": "Rp 8.500.000",
+    "old_price": "Rp 10.000.000",
+    "discount": "15%",
+    "image": "Syltherine.png"
+  },
+  {
+    "name": "Felix",
+    "description": "Wooden dining table",
+    "price": "Rp 6.000.000",
+    "old_price": "",
+    "discount": "",
+    "image": "Leviosa.png"
+  },
+  {
+    "name": "Celeste",
+    "description": "Glass coffee table",
+    "price": "Rp 2.200.000",
+    "old_price": "Rp 2.800.000",
+    "discount": "20%",
+    "image": "Lolito.png"
+  },
+  {
+    "name": "Aurora",
+    "description": "Classic wooden chair",
+    "price": "Rp 1.000.000",
+    "old_price": "",
+    "discount": "",
+    "image": "Respira.png"
+  },
+  {
+    "name": "Nimbus",
+    "description": "Modern desk chair",
+    "price": "Rp 2.700.000",
+    "old_price": "Rp 3.500.000",
+    "discount": "23%",
+    "image": "Syltherine.png"
+  },
+  {
+    "name": "Palladium",
+    "description": "Elegant bookshelf",
+    "price": "Rp 5.000.000",
+    "old_price": "Rp 6.500.000",
+    "discount": "23%",
+    "image": "Leviosa.png"
+  },
+  {
+    "name": "Zenith",
+    "description": "Comfortable armchair",
+    "price": "Rp 3.500.000",
+    "old_price": "Rp 4.500.000",
+    "discount": "22%",
+    "image": "Lolito.png"
+  },
+  {
+    "name": "Breeze",
+    "description": "Outdoor patio set",
+    "price": "Rp 9.000.000",
+    "old_price": "Rp 10.500.000",
+    "discount": "14%",
+    "image": "Respira.png"
+  },
+  {
+    "name": "Stella",
+    "description": "Elegant sofa set",
+    "price": "Rp 15.000.000",
+    "old_price": "Rp 18.000.000",
+    "discount": "17%",
+    "image": "Syltherine.png"
+  },
+  {
+    "name": "Orion",
+    "description": "Wooden coffee table",
+    "price": "Rp 2.000.000",
+    "old_price": "Rp 2.500.000",
+    "discount": "20%",
+    "image": "Leviosa.png"
+  },
+  {
+    "name": "Mira",
+    "description": "Modern dining table",
+    "price": "Rp 6.500.000",
+    "old_price": "Rp 7.800.000",
+    "discount": "17%",
+    "image": "Lolito.png"
+  },
+  {
+    "name": "Gemini",
+    "description": "Stylish bar stool",
+    "price": "Rp 1.200.000",
+    "old_price": "Rp 1.500.000",
+    "discount": "20%",
+    "image": "Respira.png"
+  },
+  {
+    "name": "Nova",
+    "description": "Comfy recliner chair",
+    "price": "Rp 5.000.000",
+    "old_price": "Rp 6.000.000",
+    "discount": "17%",
+    "image": "Syltherine.png"
+  },
+  {
+    "name": "Triton",
+    "description": "Modern bar table",
+    "price": "Rp 4.500.000",
+    "old_price": "Rp 5.000.000",
+    "discount": "10%",
+    "image": "Leviosa.png"
+  },
+  {
+    "name": "Serene",
+    "description": "Luxury recliner sofa",
+    "price": "Rp 12.000.000",
+    "old_price": "Rp 15.000.000",
+    "discount": "20%",
+    "image": "Lolito.png"
+  },
+  {
+    "name": "Aquila",
+    "description": "Elegant dining set",
+    "price": "Rp 9.000.000",
+    "old_price": "Rp 10.500.000",
+    "discount": "14%",
+    "image": "Respira.png"
+  },
+  {
+    "name": "Castor",
+    "description": "Modern TV stand",
+    "price": "Rp 3.000.000",
+    "old_price": "Rp 3.800.000",
+    "discount": "21%",
+    "image": "Syltherine.png"
+  },
+  {
+    "name": "Lyra",
+    "description": "Stylish armchair",
+    "price": "Rp 2.800.000",
+    "old_price": "Rp 3.500.000",
+    "discount": "20%",
+    "image": "Leviosa.png"
+  },
+  {
+    "name": "Vega",
+    "description": "Luxury dining chair",
+    "price": "Rp 1.500.000",
+    "old_price": "",
+    "discount": "",
+    "image": "Lolito.png"
+  },
+  {
+    "name": "Sirius",
+    "description": "Comfortable sofa",
+    "price": "Rp 11.000.000",
+    "old_price": "Rp 13.500.000",
+    "discount": "18%",
+    "image": "Respira.png"
+  },
+  {
+    "name": "Capella",
+    "description": "Elegant coffee table",
+    "price": "Rp 2.200.000",
+    "old_price": "Rp 2.800.000",
+    "discount": "20%",
+    "image": "Syltherine.png"
+  },
+  {
+    "name": "Altair",
+    "description": "Luxury bar stool",
+    "price": "Rp 1.500.000",
+    "old_price": "",
+    "discount": "",
+    "image": "Leviosa.png"
+  },
+  {
+    "name": "Polaris",
+    "description": "Comfortable recliner",
+    "price": "Rp 6.500.000",
+    "old_price": "Rp 8.000.000",
+    "discount": "19%",
+    "image": "Lolito.png"
+  },
+  {
+    "name": "Andromeda",
+    "description": "Luxury lounge chair",
+    "price": "Rp 4.000.000",
+    "old_price": "Rp 5.000.000",
+    "discount": "20%",
+    "image": "Respira.png"
+  },
+  {
+    "name": "Phoenix",
+    "description": "Stylish office chair",
+    "price": "Rp 3.500.000",
+    "old_price": "Rp 4.200.000",
+    "discount": "17%",
+    "image": "Syltherine.png"
   }
 ]
