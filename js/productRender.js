@@ -12,7 +12,7 @@ fetch("/js/products.json")
         product.description;
       productEl.querySelector(".price").textContent = product.price;
 
-      const image = productEl.querySelector("img");
+      const image = productEl.querySelector("#product-image");
       image.src = `/img/${product.image}`;
       image.alt = product.name;
       if (product.old_price) {
