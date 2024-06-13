@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <script src="/js/productRender.js"></script>
 
     <title>Mobili | Result Page</title>
   </head>
@@ -73,9 +74,19 @@
         <span id="showQtd">16</span>
       </div>
     </section>
-    <section class="cointainer">
+    <div class="products" id="products"></div>
 
-    </section>
+    <template id="product-template">
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Product Image">
+        <h2 class="product-name" id="name"></h2>
+        <p class="product-description"></p>
+        <p class="price" id="price"></p>
+        <div class="old-price" id="old-price"></div>
+        <div class="discount" id="discount"></div>
+        <div class="tag" id="tag"></div>
+      </div>
+    </template>
     <section class="benefits-bundle">
       <div class="bundle--high-quality">
         <div>
