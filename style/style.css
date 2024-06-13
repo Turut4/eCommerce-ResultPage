@@ -214,9 +214,9 @@
   background-color: green;
 }
 .show-details {
-  display: none;
   pointer-events: none;
   visibility: hidden;
+  display: none;
 }
 
 .product:hover {
@@ -224,7 +224,7 @@
     pointer-events: visible;
     position: absolute;
     visibility: visible;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #3a3a3aab;
     display: flex;
     justify-content: center;
     width: 90%;
