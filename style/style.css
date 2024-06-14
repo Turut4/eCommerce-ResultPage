@@ -81,7 +81,7 @@
 
 /* COVER IMAGE  */
 .shop-cover {
-  background-image: url("/img/shopeCover.png");
+  background-image: url("./img/shopeCover.png");
   height: 316px;
   background-position: center;
   width: 100%;
