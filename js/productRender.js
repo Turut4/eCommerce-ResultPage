@@ -39,7 +39,9 @@ fetch("./js/products.json")
       }
 
       if (product.discount) {
-        productEl.querySelector(".discount").textContent = product.discount;
+        productEl.querySelector(
+          ".discount"
+        ).textContent = `-${product.discount}`;
       } else {
         productEl.querySelector(".discount").style.display = "none";
       }
