@@ -15,7 +15,7 @@ const filterProductsByName = (products) => {
   });
 };
 
-fetch("/js/products.json")
+fetch("./js/products.json")
   .then((res) => res.json())
   .then((products) => {
     products = filterProductsByPrice(products, 1000, 5000000);
