@@ -71,20 +71,26 @@ div .bi {
   margin-bottom: -5px;
 }
 
-.search-box {
-  width: 250px;
-  height: 30px;
+#search-box {
+  display: none;
+}
+#search-box.active {
+  margin-top: 8px;
+  width: 320px;
+  height: 40px;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
   background-color: #fff;
   position: absolute;
-  right: 20px;
+  right: 40px;
+  border-radius: 20px;
+  border: #333 solid 1px;
 }
 
-.search-box .search-btn--opened {
-  padding: 0px 10px;
-  height: 30px;
+#search-box .search-btn--opened {
+  padding: 0px 20px;
+  height: 40px;
   width: 25px;
   display: flex;
   justify-content: center;
@@ -92,8 +98,9 @@ div .bi {
   cursor: pointer;
 }
 
-.search-box .close-search {
-  height: 30px;
+#search-box .close-search {
+  padding: 0px 20px;
+  height: 40px;
   width: 25px;
   display: flex;
   justify-content: center;
@@ -101,18 +108,18 @@ div .bi {
   cursor: pointer;
 }
 
-.search-box i {
+#search-box i {
   font-size: 18px;
 }
 
-.search-box .search-input {
+#search-box .search-input {
+  margin-top: 3px;
   border: none;
   outline: none;
-  padding: 10px;
-  border-bottom: #000 1px solid;
-  width: 100%;
-  height: 90%;
-  line-height: 25px;
+  padding: 0px 10px;
+  border-bottom: #000000 1px solid;
+  width: 240px;
+  height: 80%;
 }
 .nav--page-list-link {
   padding-right: 15px;
@@ -442,6 +449,7 @@ div .bi {
   .logo--header {
     margin-left: 0;
   }
+
   .nav--pages {
     justify-content: center;
   }

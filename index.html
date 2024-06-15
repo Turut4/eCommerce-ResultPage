@@ -19,7 +19,7 @@
     />
     <script src="./js/productRender.js"></script>
     <link rel="icon" type="image/png" href="./img/logo.png"/>
-    <title>Mobili | Result Page</title>
+    <title>Compass | Result List</title>
   </head>
   <body>
     <header>
@@ -27,7 +27,7 @@
       <div class="header">
         <div class="store-name--header">
           <img class="logo--header" src="./img/logo.png" alt="Mobili Logo" />
-          <h1 class="name--header">Mobili</h1>
+          <h1 class="name--header">Compass</h1>
         </div>
         <div class="nav--pages">
           <nav>
@@ -40,7 +40,7 @@
         <div class="nav--user-options">
           <nav>
             <a href="#"><i class="bi bi-person-exclamation"></i></a>
-            <span id="search-btn--closed"><i class="bi bi-search"></i></span>
+            <i class="bi bi-search" id="search-btn"></i>
             <a href="#"><i class="bi bi-heart"></i></a>
             <a href="#"><i class="bi bi-cart"></i></a>
           </nav>
@@ -48,9 +48,9 @@
 
       </div>
     </header>
-    <div class="search-box">
-      <div class="search-btn--opened"><i class="bi bi-search"></i></div>
-      <div class="search-input"><input type="text" id="" placeholder="Faça uma busca..."></div>
+    <div id="search-box">
+      <div type="submit" class="search-btn--opened"><i class="bi bi-search"></i></div>
+      <div ><input class="search-input" type="text" id="" placeholder="Faça uma busca..."></div>
       <div class="close-search"><i class="bi bi-x-circle"></i></div> 
     </div>
     <section class="shop-cover">
@@ -161,5 +161,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/searchManager.js"></script>
   </body>
 </html>
