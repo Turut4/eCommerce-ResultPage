@@ -1,3 +1,10 @@
+window.onload = () => {
+  showProducts();
+};
+const clearProductContainer = () => {
+  const productContainer = document.getElementById("products");
+  productContainer.innerHTML = "";
+};
 const renderProducts = (products) => {
   const template = document.getElementById("product-template");
   const productContainer = document.getElementById("products");
@@ -44,25 +51,25 @@ const filterByPrice = (minPrice, maxPrice) => {
     price * 1 >= minPrice && price * 1 <= maxPrice;
   });
 };
-const showProducts = () =>
-  fetch("./js/products.json")
-    .then((res) => res.json())
-    .then((products) => {
-      renderProducts(products);
-    });
+const getJson = () => {
+  return fetch("./js/products.json").then((res) => res.json());
+};
 
-const showFilteredProducts = (minPrice, maxPrice) => {
-  fetch("./js/products.json")
-    .then((res) => res.json())
-    .then((products) => {
-      products = products.filter((product) => {
-        const price = parseFloat(product.price.replace(/[Rp\s.]/g, "")); // Handle price formatting
-        return price >= minPrice && price <= maxPrice;
-      });
-      console.log(products);
-      renderProducts(products); // Call renderProducts with filtered products
+const showProducts = () => {
+  getJson().then((products) => {
+    renderProducts(products);
+  });
+};
+
+const showProductsByFilteredPrice = (minPrice, maxPrice) => {
+  getJson().then((products) => {
+    products = products.filter((product) => {
+      const price = parseFloat(product.price.replace(/[Rp\s.]/g, "")); // Handle price formatting
+      return price >= minPrice && price <= maxPrice;
     });
+    console.log(products);
+    renderProducts(products); // Call renderProducts with filtered products
+  });
 };
 
 // showProducts();
-showFilteredProducts(10, 2000000);
