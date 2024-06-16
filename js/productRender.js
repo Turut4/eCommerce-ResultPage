@@ -3,8 +3,14 @@ window.onload = () => {
 };
 const clearProductContainer = () => {
   const productContainer = document.getElementById("products");
+  productResultDiv.innerHTML = "";
   productContainer.innerHTML = "";
 };
+
+const getJson = () => {
+  return fetch("./js/products.json").then((res) => res.json());
+};
+
 const renderProducts = (products) => {
   const template = document.getElementById("product-template");
   const productContainer = document.getElementById("products");
@@ -40,10 +46,6 @@ const renderProducts = (products) => {
 
     return productContainer.appendChild(productEl);
   });
-};
-
-const getJson = () => {
-  return fetch("./js/products.json").then((res) => res.json());
 };
 
 const showProducts = () => {

@@ -3,6 +3,7 @@ const searchBox = document.getElementById("search-box");
 const closeBtn = document.querySelector(".close-search");
 const text_input = document.querySelector(".search-input");
 const searchBtn = document.querySelector(".search-btn--opened");
+const productResultDiv = document.getElementById("product-results");
 
 if (searchBoxButton) {
   searchBoxButton.addEventListener("click", (e) => {
@@ -17,6 +18,7 @@ if (closeBtn) {
     searchBox.classList.remove("active");
     showProducts();
     text_input.value = "";
+    clearProductContainer();
   });
 }
 
@@ -40,7 +42,11 @@ searchBtn.addEventListener("click", (e) => {
     if (filteredProducts.length === 0) {
       productDiv = document.getElementById("products");
       productDiv.innerHTML = '<p class="no-results">No results found</p>';
+      renderProducts(productDiv);
+    } else {
+      productResultDiv.innerHTML = "";
+      productResultDiv.innerHTML = `<p class="results">Results for: '${text_input.value}'</p>`;
+      renderProducts(filteredProducts);
     }
-    renderProducts(filteredProducts);
   });
 });

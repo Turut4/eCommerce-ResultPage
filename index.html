@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <script src="./js/productRender.js"></script>
-    <link rel="icon" type="image/png" href="./img/logo.png"/>
+    <link rel="icon" type="image/png" href="./img/logo.png" style="width: 20px; height: 20px;"/>
     <title>Compass | Result List</title>
   </head>
   <body>
@@ -79,8 +79,10 @@
             <input id="apply-filter" type="button" value="Apply">
           </div>
           <div id="order-buttons">
-            <i class="bi bi-alphabet-uppercase"></i>
-            <i class="bi bi-123"></i>
+            <span id="order-alpha">A-Z</span>
+            <span id="order-price-higher">Higher</span>
+            <span id="order-price-lower">Lower</span>
+            <span id="clear-filters">Clear filters</span>
           </div>
         </div>
         <!-- Implementar js -->
@@ -91,6 +93,7 @@
         <span id="showQtd">16</span>
       </div>
     </section>
+    <div id="product-results"></div>
     <div class="products" id="products">
     </div>
     <template id="product-template">

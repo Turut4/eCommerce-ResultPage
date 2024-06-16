@@ -241,10 +241,39 @@ input::-webkit-inner-spin-button {
   background-color: #fff;
   height: 20px;
   padding: 0px 5px;
+  cursor: pointer;
 }
+
 #order-buttons {
   display: flex;
 }
+
+#order-alpha,
+#order-price-higher,
+#order-price-lower,
+#clear-filters {
+  font-size: 16px;
+  margin: 0px 10px;
+  padding: 0px 5px;
+  border: #cfcfcf solid 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#order-alpha:hover,
+#order-price-higher:hover,
+#order-price-lower:hover,
+#clear-filters:hover {
+  background-color: #d3d3d3;
+}
+
+#order-alpha.active,
+#order-price-higher.active,
+#order-price-lower.active {
+  background-color: #d3d3d3;
+  border-bottom: #000 solid 1px;
+}
+
 .filter-text {
   display: inline;
   margin-top: 2px;
@@ -272,6 +301,11 @@ input::-webkit-inner-spin-button {
 }
 
 /* PRODUCTS */
+#product-results {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px;
+}
 .products {
   display: flex;
   justify-content: space-between;
