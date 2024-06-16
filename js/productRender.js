@@ -31,11 +31,6 @@ const renderProducts = (products, page) => {
     Object.values(products).length
   } Results`;
 
-  console.log(page);
-  console.log(start);
-  console.log(end);
-  console.log(productsToRender);
-
   productsToRender.forEach((product) => {
     const productEl = document.importNode(template.content, true);
 

@@ -449,6 +449,11 @@ input::-webkit-inner-spin-button {
   justify-content: center;
   display: flex;
 }
+
+#side-bar {
+  display: none;
+}
+
 #pagination button {
   width: 60px;
   height: 60px;
@@ -593,6 +598,10 @@ input::-webkit-inner-spin-button {
     margin-left: 0;
   }
 
+  #side-bar.active {
+    display: flex;
+  }
+
   .nav--pages {
     justify-content: center;
   }
@@ -689,6 +698,37 @@ input::-webkit-inner-spin-button {
     padding-left: 4px;
     margin-top: 6px;
     cursor: pointer;
+  }
+  #side-bar.active {
+    display: block;
+    background-color: #fff;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  .header-sidebar {
+    background-color: #f9f1e7;
+    height: 50px;
+    line-height: 50px;
+    margin-left: -30px;
+    margin-top: -18px;
+    padding-top: 10px;
+  }
+  #side-bar i {
+    font-size: 40px;
+    right: 20px;
+    position: absolute;
+  }
+  #side-bar.active a {
+    display: flex;
+    border: #00000034 solid 1px;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px;
+    padding-left: 20px;
+    flex-direction: column;
+    font-size: 30px;
   }
   .logo--header {
     margin-left: 50px;
