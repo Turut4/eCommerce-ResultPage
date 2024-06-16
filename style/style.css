@@ -197,9 +197,9 @@ div .bi {
   display: block;
   position: absolute;
   background-color: white;
-  left: 10px;
-  width: 350px;
-  height: 300px;
+  left: 30px;
+  width: 380px;
+  height: 120px;
   border-radius: 10px;
   border: 2px solid #0000001f;
   z-index: 1;
@@ -242,7 +242,9 @@ input::-webkit-inner-spin-button {
   height: 20px;
   padding: 0px 5px;
 }
-
+#order-buttons {
+  display: flex;
+}
 .filter-text {
   display: inline;
   margin-top: 2px;

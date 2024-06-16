@@ -64,7 +64,7 @@ const showProductsFilteredByPrice = (minPrice, maxPrice) => {
         priceB = b.price.replace(/[Rp\s.]/g, "");
         return priceA - priceB;
       });
-    if (products.length < 1) {
+    if (!products.length) {
       products = document.getElementById("products");
       products.innerHTML = '<p class="no-results">No results found</p>';
     }
