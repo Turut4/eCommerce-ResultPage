@@ -299,22 +299,54 @@ input::-webkit-inner-spin-button {
   margin-left: 8px;
   cursor: pointer;
 }
+#showQdt-options {
+  display: none;
+}
+
+#showQdt-options.active {
+  display: flex;
+  position: absolute;
+  background-color: white;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 150px;
+  right: 30px;
+  width: 150px;
+  height: 80px;
+  border-radius: 10px;
+  border: 2px solid #0000001f;
+  z-index: 1;
+}
+
+.showBtn {
+  font-size: 16px;
+  background-color: #fff;
+  justify-content: center;
+  margin: 0px 10px;
+  padding: 0px 5px;
+  width: 40px;
+  display: flex;
+  border: #cfcfcf solid 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
 
 /* PRODUCTS */
 #product-results {
   font-size: 20px;
   font-weight: bold;
-  margin: 20px;
+  margin: 30px;
 }
 .products {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  margin: 40px 10%;
+  padding: 5px 5%;
 }
 .product {
   padding-bottom: 15px;
-  margin: 10px;
+  margin: 40px;
   width: 300px;
   text-align: left;
   align-self: center;
@@ -411,7 +443,26 @@ input::-webkit-inner-spin-button {
   display: flex;
   float: left;
 }
+/* PAGINATION */
+#pagination {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#pagination button {
+  width: 60px;
+  height: 60px;
+  margin: 10px 38px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #f9f1e7;
+  cursor: pointer;
+}
 
+#pagination button.active {
+  background-color: #b88e2f;
+  color: #fff;
+}
 /* Bundle */
 .benefits-bundle {
   background-color: #faf3ea;

@@ -8,6 +8,12 @@ const orderPriceBtnHigher = document.getElementById("order-price-higher");
 const orderPriceBtnLower = document.getElementById("order-price-lower");
 const clearFilterBtn = document.getElementById("clear-filters");
 
+const showQtd = document.getElementById("showQtd");
+const showOptions = document.getElementById("showQdt-options");
+const show8 = document.getElementById("show-8");
+const show12 = document.getElementById("show-12");
+const show16 = document.getElementById("show-16");
+
 const clearFilter = () => {
   minPriceBox.value = "";
   maxPriceBox.value = "";
@@ -79,6 +85,34 @@ if (clearFilterBtn) {
   clearFilterBtn.addEventListener("click", () => {
     clearFilter();
     clearProductContainer();
+    showProducts();
+  });
+}
+
+if (showQtd) {
+  showQtd.addEventListener("click", (e) => {
+    e.preventDefault();
+    showOptions.classList.toggle("active");
+  });
+  show8.addEventListener("click", (e) => {
+    e.preventDefault();
+    showOptions.classList.toggle("active");
+    PRODUCTS_PER_PAGE = 8;
+    showQtd.textContent = "8";
+    showProducts();
+  });
+  show12.addEventListener("click", (e) => {
+    e.preventDefault();
+    showOptions.classList.toggle("active");
+    PRODUCTS_PER_PAGE = 12;
+    showQtd.textContent = "12";
+    showProducts();
+  });
+  show16.addEventListener("click", (e) => {
+    e.preventDefault();
+    showOptions.classList.toggle("active");
+    PRODUCTS_PER_PAGE = 16;
+    showQtd.textContent = "16";
     showProducts();
   });
 }
