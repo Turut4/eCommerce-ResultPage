@@ -15,6 +15,11 @@ const clearFilter = () => {
   orderPriceBtnHigher.classList.remove("active");
   orderPriceBtnLower.classList.remove("active");
 };
+const clearFilterButtons = () => {
+  orderAlphaBtn.classList.remove("active");
+  orderPriceBtnHigher.classList.remove("active");
+  orderPriceBtnLower.classList.remove("active");
+};
 
 if (openFilter) {
   openFilter.addEventListener("click", (e) => {
@@ -26,14 +31,14 @@ if (openFilter) {
 if (filterBox) {
   applyFilter.addEventListener("click", (e) => {
     clearProductContainer();
-    clearFilter();
+    clearFilterButtons();
     e.preventDefault();
     const minPrice = minPriceBox.value * 1;
     const maxPrice = maxPriceBox.value * 1;
     if (minPrice === 0 && maxPrice === 0) {
       showProducts();
     } else if (minPrice > 0 && maxPrice === 0) {
-      showProductsFilteredByPrice(minPrice, 100000000000);
+      showProductsFilteredByPrice(minPrice, Infinity);
     } else if (minPrice === 0 && maxPrice > 0) {
       showProductsFilteredByPrice(0, maxPrice);
     } else showProductsFilteredByPrice(minPrice, maxPrice);

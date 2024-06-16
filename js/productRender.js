@@ -1,6 +1,10 @@
 window.onload = () => {
   showProducts();
 };
+
+const PRODUCTS_PER_PAGE = 8;
+let currentPage = 1;
+
 const clearProductContainer = () => {
   const productContainer = document.getElementById("products");
   productResultDiv.innerHTML = "";
@@ -11,11 +15,27 @@ const getJson = () => {
   return fetch("./js/products.json").then((res) => res.json());
 };
 
-const renderProducts = (products) => {
+const renderProducts = (products, page) => {
+  page = currentPage || 1;
   const template = document.getElementById("product-template");
   const productContainer = document.getElementById("products");
+  clearProductContainer();
+  const start = (page - 1) * PRODUCTS_PER_PAGE;
+  const end = start + PRODUCTS_PER_PAGE;
+  const productsToRender = Object.values(products).slice(start, end);
+  const itemsQtdDescription = document.querySelector(
+    ".filter-text--description"
+  );
+  itemsQtdDescription.textContent = `Showing ${start + 1}-${end} of ${
+    Object.values(products).length
+  } Results`;
 
-  products.forEach((product) => {
+  console.log(page);
+  console.log(start);
+  console.log(end);
+  console.log(productsToRender);
+
+  productsToRender.forEach((product) => {
     const productEl = document.importNode(template.content, true);
 
     productEl.querySelector(".product-name").textContent = product.name;
@@ -44,8 +64,31 @@ const renderProducts = (products) => {
       productEl.querySelector(".tag").style.display = "none";
     }
 
-    return productContainer.appendChild(productEl);
+    productContainer.appendChild(productEl);
+    renderPagination(Object.values(products).length);
   });
+};
+
+const renderPagination = (totalProducts) => {
+  const totalPages = Math.ceil(totalProducts / PRODUCTS_PER_PAGE);
+  const paginationContainer = document.getElementById("pagination");
+  paginationContainer.innerHTML = "";
+
+  for (let i = 1; i <= totalPages; i++) {
+    const button = document.createElement("button");
+    button.textContent = i;
+    button.addEventListener("click", () => {
+      currentPage = i;
+      if (orderAlphaBtn.classList.contains("active")) {
+        showAllProductsOrderedByName();
+      } else if (orderPriceBtnLower.classList.contains("active")) {
+        showAllProductsOrderedByPrice();
+      } else if (orderPriceBtnHigher.classList.contains("active")) {
+        showAllProductsOrderedByPriceReverse();
+      } else showProducts();
+    });
+    paginationContainer.appendChild(button);
+  }
 };
 
 const showProducts = () => {
