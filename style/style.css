@@ -636,11 +636,10 @@ input::-webkit-inner-spin-button {
   #filter-icon img {
     margin-left: 30px;
   }
-  #showQtd-text {
-    display: none;
-  }
+
   #showQtd {
-    display: none;
+    margin-right: 20px;
+    padding: 5px 10px;
   }
 
   .products {
@@ -684,6 +683,9 @@ input::-webkit-inner-spin-button {
   }
   .bundle--description {
     white-space: wrap;
+  }
+  #pagination button {
+    margin: 10px 10px;
   }
 }
 

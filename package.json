@@ -11,5 +11,6 @@
     "resultpage"
   ],
   "author": "Lucas Turuta",
-  "license": "(MIT)"
+  "license": "(MIT)",
+  "devDependencies": {}
 }
