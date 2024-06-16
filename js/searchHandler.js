@@ -20,6 +20,12 @@ if (closeBtn) {
   });
 }
 
+text_input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    searchBtn.click();
+  }
+});
+
 searchBtn.addEventListener("click", (e) => {
   e.preventDefault();
   clearProductContainer();
@@ -31,7 +37,10 @@ searchBtn.addEventListener("click", (e) => {
         product.description.toLowerCase().includes(search_input)
       );
     });
+    if (filteredProducts.length === 0) {
+      productDiv = document.getElementById("products");
+      productDiv.innerHTML = '<p class="no-results">No results found</p>';
+    }
     renderProducts(filteredProducts);
-    console.log(filteredProducts);
   });
 });

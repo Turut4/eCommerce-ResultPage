@@ -45,11 +45,10 @@
             <a href="#"><i class="bi bi-cart"></i></a>
           </nav>
         </div>
-
       </div>
     </header>
     <div id="search-box">
-      <div type="submit" class="search-btn--opened"><i class="bi bi-search"></i></div>
+      <div type="button" class="search-btn--opened"><i class="bi bi-search"></i></div>
       <div ><input class="search-input" type="text" id="" placeholder="Faça uma busca..."></div>
       <div class="close-search"><i class="bi bi-x-circle"></i></div> 
     </div>
@@ -69,8 +68,20 @@
     </section>
     <section class="filter-section">
       <div class="filter-options">
-        <a id="filter-icon"><img src="./img/icons/filter.png" alt=""></a>
+        <i id="filterBtn" class="bi bi-filter"></i>
         <span class="filter-text">Filter</span>
+        <div id="filter-box">
+          <div>
+            <input id="minPrice" type="number" placeholder="(Mín)">
+            <span>-</span>
+            <input id="maxPrice" type='number' placeholder="(Máx)">
+            <input id="apply-filter" type="button" value="Apply">
+          </div>
+          <div>
+            <i class="bi bi-alphabet-uppercase"></i>
+            <i class="bi bi-123"></i>
+          </div>
+        </div>
         <!-- Implementar js -->
         <span class="filter-text--description">Showing 1-16 of 32 Results</span>
       </div>
@@ -79,7 +90,8 @@
         <span id="showQtd">16</span>
       </div>
     </section>
-    <div class="products" id="products"></div>
+    <div class="products" id="products">
+    </div>
     <template id="product-template">
       <div class="product">
         <div class="show-details">
@@ -161,6 +173,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/filterHandler.js"></script>
     <script src="./js/searchHandler.js"></script>
   </body>
 </html>

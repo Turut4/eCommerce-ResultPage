@@ -42,15 +42,6 @@ const renderProducts = (products) => {
   });
 };
 
-const filterByPrice = (minPrice, maxPrice) => {
-  minPrice = minPrice * 1;
-  maxPrice = maxPrice * 1;
-
-  return products.filter((product) => {
-    price = product.price.replace(/[Rp\s.]/g, "");
-    price * 1 >= minPrice && price * 1 <= maxPrice;
-  });
-};
 const getJson = () => {
   return fetch("./js/products.json").then((res) => res.json());
 };
@@ -61,7 +52,7 @@ const showProducts = () => {
   });
 };
 
-const showProductsByFilteredPrice = (minPrice, maxPrice) => {
+const showProductsFilteredByPrice = (minPrice, maxPrice) => {
   getJson().then((products) => {
     products = products.filter((product) => {
       const price = parseFloat(product.price.replace(/[Rp\s.]/g, "")); // Handle price formatting
