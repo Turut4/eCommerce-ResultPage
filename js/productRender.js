@@ -101,3 +101,14 @@ const showAllProductsOrderedByPrice = () => {
     renderProducts(products);
   });
 };
+
+const showAllProductsOrderedByPriceReverse = () => {
+  getJson().then((products) => {
+    products = products.sort((a, b) => {
+      priceA = a.price.replace(/[Rp\s.]/g, "");
+      priceB = b.price.replace(/[Rp\s.]/g, "");
+      return priceB - priceA;
+    });
+    renderProducts(products);
+  });
+};

@@ -507,7 +507,7 @@ input::-webkit-inner-spin-button {
   outline: none;
 }
 
-.button-subbmit {
+#button-subbmit {
   background-color: #ffff;
   border: none;
   border-bottom: #000 solid 1px;

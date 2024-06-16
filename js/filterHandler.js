@@ -26,6 +26,7 @@ if (openFilter) {
 if (filterBox) {
   applyFilter.addEventListener("click", (e) => {
     clearProductContainer();
+    clearFilter();
     e.preventDefault();
     const minPrice = minPriceBox.value * 1;
     const maxPrice = maxPriceBox.value * 1;
@@ -45,7 +46,7 @@ if (orderAlphaBtn) {
     clearProductContainer();
     e.preventDefault();
     orderAlphaBtn.classList.toggle("active");
-    showAllProductsOrderedByName;
+    showAllProductsOrderedByName();
   });
 }
 
@@ -65,7 +66,7 @@ if (orderPriceBtnHigher) {
     clearProductContainer();
     e.preventDefault();
     orderPriceBtnHigher.classList.toggle("active");
-    showAllProductsOrderedByPriceHigher();
+    showAllProductsOrderedByPriceReverse();
   });
 }
 
