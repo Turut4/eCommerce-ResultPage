@@ -763,4 +763,7 @@ input::-webkit-inner-spin-button {
   .filter-text--description {
     display: none;
   }
+  #pagination button {
+    margin: 10px 10px;
+  }
 }
