@@ -37,10 +37,10 @@ searchBtn.addEventListener("click", (e) => {
         product.description.toLowerCase().includes(search_input)
       );
     });
-    if (filteredProducts.length === 0) {
-      productDiv = document.getElementById("products");
-      productDiv.innerHTML = '<p class="no-results">No results found</p>';
-    }
+    // if (filteredProducts.length === 0) {
+    //   productDiv = document.getElementById("products");
+    //   productDiv.innerHTML = '<p class="no-results">No results found</p>';
+    // }
     renderProducts(filteredProducts);
   });
 });

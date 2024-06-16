@@ -54,13 +54,48 @@ const showProducts = () => {
 
 const showProductsFilteredByPrice = (minPrice, maxPrice) => {
   getJson().then((products) => {
-    products = products.filter((product) => {
-      const price = parseFloat(product.price.replace(/[Rp\s.]/g, "")); // Handle price formatting
-      return price >= minPrice && price <= maxPrice;
-    });
-    console.log(products);
-    renderProducts(products); // Call renderProducts with filtered products
+    products = products
+      .filter((product) => {
+        const price = parseFloat(product.price.replace(/[Rp\s.]/g, ""));
+        return price >= minPrice && price <= maxPrice;
+      })
+      .sort((a, b) => {
+        priceA = a.price.replace(/[Rp\s.]/g, "");
+        priceB = b.price.replace(/[Rp\s.]/g, "");
+        return priceA - priceB;
+      });
+    if (products.length < 1) {
+      products = document.getElementById("products");
+      products.innerHTML = '<p class="no-results">No results found</p>';
+    }
+    renderProducts(products);
   });
 };
 
-// showProducts();
+const showAllProductsOrderedByName = () => {
+  getJson().then((products) => {
+    products = products.sort((a, b) => {
+      const nameA = a.name.toUpperCase();
+      const nameB = b.name.toUpperCase();
+      if (nameA < nameB) {
+        return -1;
+      }
+      if (nameA > nameB) {
+        return 1;
+      }
+      return 0;
+    });
+    renderProducts(products);
+  });
+};
+
+const showAllProductsOrderedByPrice = () => {
+  getJson().then((products) => {
+    products = products.sort((a, b) => {
+      priceA = a.price.replace(/[Rp\s.]/g, "");
+      priceB = b.price.replace(/[Rp\s.]/g, "");
+      return priceA - priceB;
+    });
+    renderProducts(products);
+  });
+};

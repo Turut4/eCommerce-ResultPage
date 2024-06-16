@@ -194,15 +194,53 @@ div .bi {
 }
 
 #filter-box.active {
-  display: flex;
+  display: block;
   position: absolute;
   background-color: white;
   left: 10px;
-  width: 300px;
+  width: 350px;
   height: 300px;
   border-radius: 10px;
   border: 2px solid #0000001f;
   z-index: 1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.input-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 20px 0px;
+}
+#minPrice,
+#maxPrice {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  border: 0;
+  border-bottom: #000 1px solid;
+  height: 20px;
+  width: 100px;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0px 5px;
+  margin: 0px 10px;
+}
+#filter-box span {
+  display: flex;
+}
+
+#apply-filter {
+  border: 0;
+  outline: 0;
+  border-bottom: #000 solid 1px;
+  background-color: #fff;
+  height: 20px;
+  padding: 0px 5px;
 }
 
 .filter-text {
@@ -234,7 +272,7 @@ div .bi {
 /* PRODUCTS */
 .products {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 40px 10%;
 }
@@ -243,6 +281,7 @@ div .bi {
   margin: 10px;
   width: 300px;
   text-align: left;
+  align-self: center;
   position: relative;
   background-color: #f4f5f7;
 }
@@ -510,6 +549,11 @@ div .bi {
 
   .products {
     margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .product {
+    align-self: center;
   }
   .footer {
     flex-direction: column;
@@ -570,8 +614,9 @@ div .bi {
   }
 
   .products {
-    margin: 0px;
-    margin-top: 40px;
+    margin: 5px -20px;
+    padding: 10px 40px;
+    justify-content: space-around;
   }
 
   .benefits-bundle {
