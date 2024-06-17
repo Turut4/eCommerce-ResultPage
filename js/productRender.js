@@ -76,15 +76,7 @@ const renderPagination = (totalProducts) => {
     }
     button.addEventListener("click", () => {
       currentPage = i;
-      if (orderAlphaBtn.classList.contains("active")) {
-        showAllProductsOrderedByName();
-      } else if (orderPriceBtnLower.classList.contains("active")) {
-        showAllProductsOrderedByPrice();
-      } else if (orderPriceBtnHigher.classList.contains("active")) {
-        showAllProductsOrderedByPriceReverse();
-      } else if (applyFilter.classList.contains("active")) {
-        applyFilter.click();
-      } else showProducts();
+      renderCurrentView();
       button.classList.toggle("active");
       window.scrollTo(0, 300);
     });
@@ -97,13 +89,7 @@ const renderPagination = (totalProducts) => {
   nextButton.addEventListener("click", () => {
     if (currentPage < totalPages) {
       currentPage++;
-      if (orderAlphaBtn.classList.contains("active")) {
-        showAllProductsOrderedByName();
-      } else if (orderPriceBtnLower.classList.contains("active")) {
-        showAllProductsOrderedByPrice();
-      } else if (orderPriceBtnHigher.classList.contains("active")) {
-        showAllProductsOrderedByPriceReverse();
-      } else showProducts();
+      renderCurrentView();
       window.scrollTo(0, 300);
     }
   });
@@ -176,4 +162,16 @@ const showAllProductsOrderedByPriceReverse = () => {
     });
     renderProducts(products);
   });
+};
+
+const renderCurrentView = () => {
+  if (orderAlphaBtn.classList.contains("active")) {
+    showAllProductsOrderedByName();
+  } else if (orderPriceBtnLower.classList.contains("active")) {
+    showAllProductsOrderedByPrice();
+  } else if (orderPriceBtnHigher.classList.contains("active")) {
+    showAllProductsOrderedByPriceReverse();
+  } else if (applyFilter.classList.contains("active")) {
+    applyFilter.click();
+  } else showProducts();
 };
