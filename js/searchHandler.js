@@ -41,12 +41,15 @@ searchBtn.addEventListener("click", (e) => {
         product.description.toLowerCase().includes(search_input)
       );
     });
+
     if (filteredProducts.length === 0) {
       itemsQtdDescription.innerHTML = `<span>No Results</span>`;
     } else {
+      if (filteredProducts.length <= PRODUCTS_PER_PAGE) {
+        currentPage = 1;
+      }
       renderProducts(filteredProducts);
       itemsQtdDescription.innerHTML = `<span>Results for: ${text_input.value}</span>`;
     }
   });
-  currentPage = 1;
 });

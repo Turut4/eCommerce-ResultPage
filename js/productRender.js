@@ -173,5 +173,7 @@ const renderCurrentView = () => {
     showAllProductsOrderedByPriceReverse();
   } else if (applyFilter.classList.contains("active")) {
     applyFilter.click();
+  } else if (text_input.value.length > 0) {
+    searchBtn.click();
   } else showProducts();
 };
