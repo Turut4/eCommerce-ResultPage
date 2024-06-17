@@ -48,4 +48,5 @@ searchBtn.addEventListener("click", (e) => {
       itemsQtdDescription.innerHTML = `<span>Results for: ${text_input.value}</span>`;
     }
   });
+  currentPage = 1;
 });
