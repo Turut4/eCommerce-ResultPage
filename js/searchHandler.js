@@ -4,6 +4,7 @@ const closeBtn = document.querySelector(".close-search");
 const text_input = document.querySelector(".search-input");
 const searchBtn = document.querySelector(".search-btn--opened");
 const productResultDiv = document.getElementById("product-results");
+const itemsQtdDescription = document.querySelector(".filter-text--description");
 
 if (searchBoxButton) {
   searchBoxButton.addEventListener("click", (e) => {
@@ -31,6 +32,7 @@ text_input.addEventListener("keydown", (e) => {
 searchBtn.addEventListener("click", (e) => {
   e.preventDefault();
   clearProductContainer();
+  itemsQtdDescription.innerHTML = "";
   const search_input = text_input.value.toLowerCase();
   getJson().then((data) => {
     const filteredProducts = data.filter((product) => {
@@ -40,13 +42,10 @@ searchBtn.addEventListener("click", (e) => {
       );
     });
     if (filteredProducts.length === 0) {
-      productDiv = document.getElementById("products");
-      productDiv.innerHTML = '<p class="no-results">No results found</p>';
-      renderProducts(productDiv);
+      itemsQtdDescription.innerHTML = `<span>No Results</span>`;
     } else {
-      productResultDiv.innerHTML = "";
-      productResultDiv.innerHTML = `<p class="results">Results for: '${text_input.value}'</p>`;
       renderProducts(filteredProducts);
+      itemsQtdDescription.innerHTML = `<span>Results for: ${text_input.value}</span>`;
     }
   });
 });

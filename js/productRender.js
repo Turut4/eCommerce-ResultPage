@@ -24,9 +24,6 @@ const renderProducts = (products, page) => {
   const start = (page - 1) * PRODUCTS_PER_PAGE;
   const end = start + PRODUCTS_PER_PAGE;
   const productsToRender = Object.values(products).slice(start, end);
-  const itemsQtdDescription = document.querySelector(
-    ".filter-text--description"
-  );
   itemsQtdDescription.textContent = `Showing ${start + 1}-${end} of ${
     Object.values(products).length
   } Results`;
