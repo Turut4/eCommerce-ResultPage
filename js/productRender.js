@@ -24,9 +24,9 @@ const renderProducts = (products, page) => {
   const start = (page - 1) * PRODUCTS_PER_PAGE;
   const end = start + PRODUCTS_PER_PAGE;
   const productsToRender = Object.values(products).slice(start, end);
-  itemsQtdDescription.textContent = `Showing ${start + 1}-${end} of ${
-    Object.values(products).length
-  } Results`;
+  itemsQtdDescription.textContent = `Showing ${start + 1}-${
+    end < Object.values(products).length ? end : Object.values(products).length
+  } of ${Object.values(products).length} Results`;
 
   productsToRender.forEach((product) => {
     const productEl = document.importNode(template.content, true);
@@ -82,6 +82,8 @@ const renderPagination = (totalProducts) => {
         showAllProductsOrderedByPrice();
       } else if (orderPriceBtnHigher.classList.contains("active")) {
         showAllProductsOrderedByPriceReverse();
+      } else if (applyFilter.classList.contains("active")) {
+        applyFilter.click();
       } else showProducts();
       button.classList.toggle("active");
       window.scrollTo(0, 300);
@@ -116,6 +118,8 @@ const showProducts = () => {
 };
 
 const showProductsFilteredByPrice = (minPrice, maxPrice) => {
+  minPrice = minPrice || 0;
+  maxPrice = maxPrice || Infinity;
   getJson().then((products) => {
     products = products
       .filter((product) => {
@@ -128,8 +132,8 @@ const showProductsFilteredByPrice = (minPrice, maxPrice) => {
         return priceA - priceB;
       });
     if (!products.length) {
-      products = document.getElementById("products");
-      products.innerHTML = '<p class="no-results">No results found</p>';
+      itemsQtdDescription.innerHTML = `<span>No Results</span>`;
+      return;
     }
     renderProducts(products);
   });
