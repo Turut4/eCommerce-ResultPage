@@ -1,0 +1,233 @@
+[
+  {
+    "name": "Syltherine",
+    "description": "Stylish cafe chair",
+    "price": " 2.500.000",
+    "discount": "30%",
+    "image": "./img/Syltherine.png"
+  },
+  {
+    "name": "Leviosa",
+    "description": "Stylish cafe chair",
+    "price": " 2.500.000",
+    "discount": "",
+    "image": "./img/Leviosa.png"
+  },
+  {
+    "name": "Lolito",
+    "description": "Luxury big sofa",
+    "price": " 7.000.000",
+    "discount": "50%",
+    "image": "./img/Lolito.png"
+  },
+  {
+    "name": "Respira",
+    "description": "Outdoor bar table and stool",
+    "price": " 500.000",
+    "tag": "New",
+    "image": "./img/Respira.png"
+  },
+  {
+    "name": "Grinder",
+    "description": "Modern coffee table",
+    "price": " 1.200.000",
+    "discount": "20%",
+    "image": "./img/Syltherine.png"
+  },
+  {
+    "name": "Elberta",
+    "description": "Elegant dining chair",
+    "price": " 1.800.000",
+    "discount": "",
+    "image": "./img/Leviosa.png"
+  },
+  {
+    "name": "Mervin",
+    "description": "Cozy lounge chair",
+    "price": " 3.000.000",
+    "discount": "25%",
+    "image": "./img/Lolito.png"
+  },
+  {
+    "name": "Oscuro",
+    "description": "Black leather sofa",
+    "price": " 10.000.000",
+    "discount": "15%",
+    "image": "./img/Respira.png"
+  },
+  {
+    "name": "Luna",
+    "description": "Outdoor lounge set",
+    "price": " 8.500.000",
+    "discount": "15%",
+    "image": "./img/Syltherine.png"
+  },
+  {
+    "name": "Felix",
+    "description": "Wooden dining table",
+    "price": " 6.000.000",
+    "discount": "",
+    "image": "./img/Leviosa.png"
+  },
+  {
+    "name": "Celeste",
+    "description": "Glass coffee table",
+    "price": " 2.200.000",
+    "discount": "20%",
+    "image": "./img/Lolito.png"
+  },
+  {
+    "name": "Aurora",
+    "description": "Classic wooden chair",
+    "price": " 1.000.000",
+    "discount": "",
+    "image": "./img/Respira.png"
+  },
+  {
+    "name": "Nimbus",
+    "description": "Modern desk chair",
+    "price": " 2.700.000",
+    "discount": "23%",
+    "image": "./img/Syltherine.png"
+  },
+  {
+    "name": "Palladium",
+    "description": "Elegant bookshelf",
+    "price": " 5.000.000",
+    "discount": "23%",
+    "image": "./img/Leviosa.png"
+  },
+  {
+    "name": "Zenith",
+    "description": "Comfortable armchair",
+    "price": " 3.500.000",
+    "discount": "22%",
+    "image": "./img/Lolito.png"
+  },
+  {
+    "name": "Breeze",
+    "description": "Outdoor patio set",
+    "price": " 9.000.000",
+    "discount": "14%",
+    "image": "./img/Respira.png"
+  },
+  {
+    "name": "Stella",
+    "description": "Elegant sofa set",
+    "price": " 15.000.000",
+    "discount": "17%",
+    "image": "./img/Syltherine.png"
+  },
+  {
+    "name": "Orion",
+    "description": "Wooden coffee table",
+    "price": " 2.000.000",
+    "discount": "20%",
+    "image": "./img/Leviosa.png"
+  },
+  {
+    "name": "Mira",
+    "description": "Modern dining table",
+    "price": " 6.500.000",
+    "discount": "17%",
+    "image": "./img/Lolito.png"
+  },
+  {
+    "name": "Gemini",
+    "description": "Stylish bar stool",
+    "price": " 1.200.000",
+    "discount": "20%",
+    "image": "./img/Respira.png"
+  },
+  {
+    "name": "Nova",
+    "description": "Comfy recliner chair",
+    "price": " 5.000.000",
+    "discount": "17%",
+    "image": "./img/Syltherine.png"
+  },
+  {
+    "name": "Triton",
+    "description": "Modern bar table",
+    "price": " 4.500.000",
+    "discount": "10%",
+    "image": "./img/Leviosa.png"
+  },
+  {
+    "name": "Serene",
+    "description": "Luxury recliner sofa",
+    "price": " 12.000.000",
+    "discount": "20%",
+    "image": "./img/Lolito.png"
+  },
+  {
+    "name": "Aquila",
+    "description": "Elegant dining set",
+    "price": " 9.000.000",
+    "discount": "14%",
+    "image": "./img/Respira.png"
+  },
+  {
+    "name": "Castor",
+    "description": "Modern TV stand",
+    "price": " 3.000.000",
+    "discount": "21%",
+    "image": "./img/Syltherine.png"
+  },
+  {
+    "name": "Lyra",
+    "description": "Stylish armchair",
+    "price": " 2.800.000",
+    "discount": "20%",
+    "image": "./img/Leviosa.png"
+  },
+  {
+    "name": "Vega",
+    "description": "Luxury dining chair",
+    "price": " 1.500.000",
+    "discount": "",
+    "image": "./img/Lolito.png"
+  },
+  {
+    "name": "Sirius",
+    "description": "Comfortable sofa",
+    "price": " 11.000.000",
+    "discount": "18%",
+    "image": "./img/Respira.png"
+  },
+  {
+    "name": "Capella",
+    "description": "Elegant coffee table",
+    "price": " 2.200.000",
+    "discount": "20%",
+    "image": "./img/Syltherine.png"
+  },
+  {
+    "name": "Altair",
+    "description": "Luxury bar stool",
+    "price": " 1.500.000",
+    "discount": "",
+    "image": "./img/Leviosa.png"
+  },
+  {
+    "name": "Polaris",
+    "description": "Comfortable recliner",
+    "price": " 6.500.000",
+    "discount": "19%",
+    "image": "./img/Lolito.png"
+  },
+  {
+    "name": "Andromeda",
+    "description": "Luxury lounge chair",
+    "price": " 4.000.000",
+    "discount": "20%",
+    "image": "./img/Respira.png"
+  },
+  {
+    "name": "Phoenix",
+    "description": "Stylish office chair",
+    "price": " 3.500.000",
+    "discount": "17%",
+    "image": "./img/Syltherine.png"
+  }
+]

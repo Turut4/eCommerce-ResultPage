@@ -12,5 +12,7 @@
   ],
   "author": "Lucas Turuta",
   "license": "(MIT)",
-  "devDependencies": {}
+  "dependencies": {
+    "react-icons": "^5.2.1"
+  }
 }
